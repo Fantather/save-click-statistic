@@ -32,7 +32,7 @@ export const useClickTracker = () => {
 
         const clearClicks = () => setClicks([]);
         const timeoutId = setTimeout(() => {
-            clearClicks
+            clearClicks()
         }, 30000);
 
         return () => {
